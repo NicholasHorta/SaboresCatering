@@ -1,0 +1,183 @@
+<%- include('partials/header.ejs') %>
+<div class='navbar'>
+    <div id='nav-cont'>
+        <h1>Sab&#243;res</h1>
+        <ul>
+            <li><a href='#one'>Home</a></li>
+            <li><a href='#two'>About Us</a></li>
+            <li><a href='#three'>Dishes</a></li>
+            <li><a href='#four'>Contact Us</a></li>
+            <li><a href='#footer'>></a></li>
+            <!-- REMOVE ID's ONCE USED FOR HREF -->
+        </ul>
+    </div>
+</div>
+<div id="outer-wrap">
+    <div id="inner-wrap">
+        <!-- Pages follow the navbar links - Home, About, Dishes, Contact, Footer -->
+        <div class="container page-one">
+            <div class='home-page-text-container'>
+                <h1 class='company-name' id='one'>Sab&#243;res</h1>
+                <div class='home-page-text'>Simple Food</div>
+                <div class='home-page-text'>Incredible Flavour</div>
+
+            </div>
+            <img src='/images/saffron.png'>
+        </div>
+        <div class="container page-two" id='two'>
+            <div class='about-us-container'>
+                <div class='about-us-head'>About Us</div>
+                <p class='about-us-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cum error
+                    nam animi distinctio sapiente nisi, expedita laboriosam ipsa omnis itaque quia voluptatem
+                    repudiandae rerum quae culpa aspernatur. Labore, delectus! In delectus facilis, atque sequi fugit
+                    molestias exercitationem, consequuntur labore iusto repellat suscipit similique debitis aliquid
+                    optio. Sit eius, id unde aliquam molestias autem officia doloremque. Corporis consectetur reiciendis
+                    deserunt!</p>
+            </div>
+
+            <div class='review-container'>
+                <div class='review-title'>What do our clients think?</div>
+                <div id='review-person'>
+                    <!-- JS FEED -->
+                    Allison:
+                </div>
+                <span id='review-body'>
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste veritatis suscipit praesentium!"
+                    <!-- JS FEED -->
+                </span>
+                <div class='review-icon'>
+                    <i class="fas fa-pepper-hot"></i>
+                    <i class="fas fa-pepper-hot"></i>
+                    <i class="fas fa-pepper-hot"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container page-three" id='three'>
+            <div class='menu-text'>DISHES</div>
+            <div class='dishes-container'>
+                <div class='flex-item morning'>
+                    <a href='../uploads/express-handbook.pdf' target="_blank">
+                        <div class='menu-link-overlay'></div>
+                    </a>
+                    <div class='menu-title'>Morning</div>
+                </div>
+                <div class='flex-item midday'>
+                    <a href='#fish'>
+                        <div class='menu-link-overlay'></div>
+                    </a>
+                    <div class='menu-title'>Mid-Day</div>
+                </div>
+                <div class='flex-item evening'>
+                    <a href='#fish'>
+                        <div class='menu-link-overlay'></div>
+                    </a>
+                    <div class='menu-title'>Evening</div>
+                </div>
+                <div class='flex-item sweet'>
+                    <a href='#fish'>
+                        <div class='menu-link-overlay'></div>
+                    </a>
+                    <div class='menu-title'>Sweet-Treats</div>
+                </div>
+            </div>
+        </div>
+        <div class="container page-four" id='four'>
+            <span class='contact-us-title'>Contact Us</span>
+            <form class='contact-form' method="POST" action='/'>
+                <div class='initial-details'>
+                    <label class='form-titles'>Name:</label>
+                    <input type='text' name='name' placeholder="Jane Doe" required>
+                    <label class='form-titles'>E-mail:</label>
+                    <input type='email' name='email' placeholder="Username@email.com" required>
+                    <label class='form-titles'>Telephone Number</label>
+                    <input type='tel' name='tel' placeholder="0800 555 5555">
+                    <label class='form-titles'>Where did you hear about us?</label>
+                    <select name='reference'>
+                        <option selected value='null' disabled>Select one of the following</option>
+                        <option value='instagram'>Instagram</option>
+                        <option value='facebook'>Facebook</option>
+                        <option value='word-of-mouth'>Word of mouth</option>
+                        <option value='event-experience'>Experienced at an event</option>
+                        <option value='other'>Other</option>
+                    </select>
+                </div>
+
+                <div class='interest-box'>
+                    <label class='form-titles'>Catering Interest: </label>
+                    <div class='menu-item'>
+                        <label>Morning</label>
+                        <input type='checkbox' name='interest' value='morning-menu'>
+                    </div>
+                    <div class='menu-item'>
+                        <label>Mid-day</label>
+                        <input type='checkbox' name='interest' value='midday-menu'>
+                    </div>
+                    <div class='menu-item'>
+                        <label>Evening</label>
+                        <input type='checkbox' name='interest' value='evening-menu'>
+                    </div>
+                    <div class='menu-item'>
+                        <label>Sweet-Treats</label>
+                        <input type='checkbox' name='interest' value='sweet-menu'>
+                    </div>
+                </div>
+
+                <div class='allergy-box-one'>
+                    <label class='form-titles'>Allergens: </label>
+                    <div class='allergy-items'>
+                        <label>Eggs</label>
+                        <input type='checkbox' name='allergy' value='eggs'>
+                        <label>Tree Nuts</label>
+                        <input type='checkbox' name='allergy' value='tree-nuts'>
+                        <label>Shellfish</label>
+                        <input type='checkbox' name='allergy' value='shellfish'>
+                        <label>Wheat</label>
+                        <input type='checkbox' name='allergy' value='wheat'>
+                        <label>Soy</label>
+                        <input type='checkbox' name='allergy' value='soy'>
+                        <label>Fish</label>
+                        <input type='checkbox' name='allergy' value='fish'>
+                        <label>Dairy</label>
+                        <input type='checkbox' name='allergy' value='dairy'>
+                        <label>Peanuts</label>
+                        <input type='checkbox' name='allergy' value='peanut'>
+                    </div>
+                </div>
+                <div class='add-info'>
+                    <label class='form-titles' rows='5' columns='5'>Additional Information:</label>
+                    <textarea placeholder="Enter additional information here" name='addInfo'></textarea>
+                </div>
+                <input type="submit" class='submit'>
+            </form>
+        </div>
+        <div class="container page-footer" id='footer'>
+            <div class='footer-grid-container'>
+                <div class='left-foot-container'>
+                    <h2 class='contact-head'>Sabores Catering</h2>
+                    <span class='contact-head'>Tel:</span>
+                    <span class='contact-info'>085 4629 6692</span>
+                    <span class='contact-info'>0800 514 7995</span>
+                    <span class='contact-head'>E-Mail:</span>
+                    <span class='contact-info'>sabores.catering@gmail.com</span>
+                    <span class='contact-head'>Location:</span>
+                    <span class='contact-info'>Largo Batalhao Sapadores do Caminho de Ferro, Loule, Algarve</span>
+                </div>
+                <div class='right-foot-container'>
+                    <div class='map-view'>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.6332488160465!2d-8.02529675714167!3d37.13763952661742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab115e1461aeb%3A0x6884b1b9421d3358!2sLargo%20Batalh%C3%A3o%20Sapadores%20Caminhos%20de%20Ferro%2C%208100-561%20Loul%C3%A9%2C%20Portugal!5e0!3m2!1sen!2suk!4v1584964869329!5m2!1sen!2suk"
+                            width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                <div class='bottom-social-media-container'>
+                    <a href='https://facebook.com' class='icon'>Facebook <i class="fab fa-facebook-square"></i></a>
+                    <a href='https://instagram.com' class='icon'>Instagram <i class="fab fa-instagram"></i></a>
+                    <a href='mailto:nickavsales@gmail.com?Subject=Sabores%20Enquiry' target='top' class='icon'>E-Mail <i
+                            class="fas fa-envelope-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('partials/footer.ejs') %>
